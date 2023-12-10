@@ -1,3 +1,6 @@
 git init
 git status
 git add 
+git remote -v
+git clone <url>
+git branch
