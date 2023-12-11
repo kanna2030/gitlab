@@ -1,0 +1,14 @@
+sudo systemctl restart docker
+  docker ps - will lists all the containers running/dead/active
+  docker pull mysql:latest : this will pull the images from docker hub
+    docker run mysql:latest
+      docker run -d -e mysql_root_password=Cloud@2095 mysql:latest (this will create a container)
+        docker ps
+        
+        [SO BASICALLY PULL IMAGE FROM DOCKER HUB > CREATE CONTAINER FROM THAT IMAGE BY USING 'RUN', HERE D IS FRO DAEMON AND E IS FOR ENVIRONMENT VARIABLES]
+
+        To go inside the container
+
+      docker exec -it <container id> sh [it- interactive terminal , sh- shell]
+        # mysql -u root -p
+        
